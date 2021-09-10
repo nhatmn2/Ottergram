@@ -20,6 +20,7 @@
     font-style: normal;
 }
 
+
 html, body {
     height: 100%;
 }
@@ -112,6 +113,28 @@ a{
     text-shadow: rgba(0, 0, 0, 0.9) 10px 20px 7px;
     font-size: 50px;
 }
+
+@media all and (min-width: 768px) {
+    .main-content {
+        flex-direction: row;
+        overflow: hidden;
+    }
+}
+
+.thumbnail-list {
+    flex-direction: column;
+    order: 0;
+    margin-left: 20px;
+}
+
+.thumbnail-item{
+    max-width: 260px;
+}
+
+.thumbnail-item + .thumbnail-item {
+    margin-top: 20px;
+}
+
 .detail-image {
     width: 90%;
 }
